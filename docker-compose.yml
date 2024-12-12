@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  node-server:
+    build:
+      context: . # Utilise le Dockerfile dans le répertoire actuel
+    ports:
+      - "3001:3001" # Mappe le port 3001 du conteneur au port 3001 de la machine hôte
+    container_name: node-bonjour-container
